@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="LearnSphere – AI-powered personalized Machine Learning education platform with code generation, audio lessons, and visual learning aids." />
+  <title>LearnSphere – AI-Powered ML Learning System</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ─── NAVBAR ─────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon"><i class="fa-solid fa-brain"></i></span>
+        <span class="logo-text">Learn<span class="accent">Sphere</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#technologies">Tech Stack</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="#demo" class="btn btn-primary nav-cta">Try Demo</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+        <i class="fa-solid fa-sparkles"></i> Powered by Generative AI
+      </div>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+        Learn<span class="gradient-text">Sphere</span>
+      </h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+        Generative AI-Powered<br />Machine Learning Learning System
+      </p>
+      <p class="hero-tagline" data-aos="fade-up" data-aos-delay="400">
+        Master ML concepts through <span class="typing-target" id="typingTarget"></span>
+      </p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+        <a href="#demo" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-rocket"></i> Get Started
+        </a>
+        <a href="#features" class="btn btn-ghost btn-lg">
+          <i class="fa-solid fa-compass"></i> Explore Features
+        </a>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+        <div class="stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">ML Topics</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Learning Modes</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">AI</span>
+          <span class="stat-label">Personalized</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">About the Platform</span>
+        <h2 class="section-title">What is <span class="gradient-text">LearnSphere</span>?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right" data-aos-delay="100">
+          <p>
+            <strong>LearnSphere</strong> is an adaptive, AI-driven educational platform designed to make Machine
+            Learning
+            accessible and engaging for everyone — from absolute beginners to seasoned practitioners.
+          </p>
+          <p>
+            Powered by <strong>Google Gemini AI</strong>, the platform dynamically generates personalized explanations,
+            interactive code examples, audio narrations, and visual diagrams — all tailored to your individual
+            learning style, pace, and background.
+          </p>
+          <p>
+            Whether you're a visual learner, a hands-on coder, or prefer listening to concepts, LearnSphere
+            adapts its delivery format in real-time so you always get the explanation that clicks.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Adaptive content — no two learning sessions are alike</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Real-time AI explanations for 50+ ML concepts</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Multi-modal: text, code, audio, and visual</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Flask-powered backend for seamless API integration</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual" data-aos="fade-left" data-aos-delay="200">
+          <div class="about-card glass-card">
+            <div class="about-card-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Adaptive Learning Engine</h3>
+            <p>Understands your learning history and adjusts complexity, format, and depth automatically.</p>
+          </div>
+          <div class="about-card glass-card" style="--delay: 0.1s">
+            <div class="about-card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Generative AI Core</h3>
+            <p>Backed by Google Gemini Pro for high-quality, contextually accurate ML content generation.</p>
+          </div>
+          <div class="about-card glass-card" style="--delay: 0.2s">
+            <div class="about-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Personalized Paths</h3>
+            <p>Curates a unique learning roadmap based on your goals, current knowledge, and preferences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ──────────────────────────────────────── -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Core Capabilities</span>
+        <h2 class="section-title">Platform <span class="gradient-text">Features</span></h2>
+        <p class="section-desc">Five powerful learning modes that work together to make ML education effortless.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon-wrap icon-purple">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3>Concept Explanation</h3>
+          <p>AI generates clear, jargon-free explanations of any ML concept. Difficulty adjusts to your level
+            automatically.</p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-circle-dot"></i> Plain-English definitions</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Real-world analogies</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Depth control (Beginner → Expert)</li>
+          </ul>
+          <div class="feature-tag">NLP · Gemini AI</div>
+        </div>
+
+        <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="feature-icon-wrap icon-blue">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Code Generation</h3>
+          <p>Get instant, runnable Python and ML code examples with inline comments and step-by-step explanations.</p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-circle-dot"></i> Scikit-learn, PyTorch, TF</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Commented & explained</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Best-practice patterns</li>
+          </ul>
+          <div class="feature-tag">Python · AI-Generated</div>
+        </div>
+
+        <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon-wrap icon-green">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3>Visual Learning Aids</h3>
+          <p>Dynamic diagrams, flowcharts, and graphs generated on-the-fly to visualize complex ML relationships.</p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-circle-dot"></i> Decision trees & networks</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Loss curves & plots</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Architecture diagrams</li>
+          </ul>
+          <div class="feature-tag">Charts · Diagrams</div>
+        </div>
+
+        <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="feature-icon-wrap icon-orange">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          <h3>Audio Lessons</h3>
+          <p>Convert any explanation into a high-quality AI voice narration. Learn while commuting or on the go.</p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-circle-dot"></i> Text-to-speech synthesis</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Adjustable playback speed</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Downloadable audio</li>
+          </ul>
+          <div class="feature-tag">TTS · Audio AI</div>
+        </div>
+
+        <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon-wrap icon-pink">
+            <i class="fa-solid fa-route"></i>
+          </div>
+          <h3>Personalized Learning Paths</h3>
+          <p>A curated, AI-built curriculum based on your goals, existing knowledge, and learning speed.</p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-circle-dot"></i> Skill gap assessment</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Milestone tracking</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Adaptive progression</li>
+          </ul>
+          <div class="feature-tag">Adaptive AI · Roadmap</div>
+        </div>
+
+        <div class="feature-card glass-card feature-card-wide" data-aos="fade-up" data-aos-delay="350">
+          <div class="feature-icon-wrap icon-teal">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3>AI Chatbot Tutor</h3>
+          <p>Ask follow-up questions, request deeper dives, or explore related topics — your AI tutor is always
+            available, always patient, always knowledgeable.</p>
+          <ul class="feature-list feature-list-inline">
+            <li><i class="fa-solid fa-circle-dot"></i> Contextual Q&A</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Multi-turn conversations</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Session memory</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Instant responses</li>
+          </ul>
+          <div class="feature-tag">Gemini · Conversational AI</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TECHNOLOGIES ───────────────────────────────────── -->
+  <section class="technologies section" id="technologies">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Built With</span>
+        <h2 class="section-title">Technology <span class="gradient-text">Stack</span></h2>
+        <p class="section-desc">Modern, battle-tested tools powering every layer of the platform.</p>
+      </div>
+      <div class="tech-grid">
+
+        <div class="tech-card glass-card" data-aos="zoom-in" data-aos-delay="50">
+          <div class="tech-icon" style="color:#00b4d8"><i class="fab fa-python"></i></div>
+          <span class="tech-name">Python</span>
+          <span class="tech-role">Backend & ML logic</span>
+        </div>
+
+        <div class="tech-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="tech-icon flask-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+              <path
+                d="M10.62 1.5c-.28.06-.55.14-.82.23L9.64 2a9.6 9.6 0 0 0-1.47.76l-.05.03a9.38 9.38 0 0 0-1.17 1.02C4.76 5.92 3.5 8.8 3.5 12c0 4.69 2.69 8.76 6.6 10.75l.17.08A9.5 9.5 0 0 0 12 23.5a9.5 9.5 0 0 0 9.5-9.5c0-4.69-3.4-8.59-7.88-9.35ZM12 4.5c.35 0 .7.02 1.04.07C16.41 5.12 19 8.26 19 12a7.5 7.5 0 0 1-7.5 7.5A7.5 7.5 0 0 1 4.5 12c0-3.96 3.07-7.22 6.96-7.49.18-.01.36-.01.54-.01Z" />
+            </svg>
+          </div>
+          <span class="tech-name">Flask</span>
+          <span class="tech-role">Web framework</span>
+        </div>
+
+        <div class="tech-card glass-card" data-aos="zoom-in" data-aos-delay="150">
+          <div class="tech-icon" style="color:#e34c26"><i class="fab fa-html5"></i></div>
+          <span class="tech-name">HTML5</span>
+          <span class="tech-role">Structure & markup</span>
+        </div>
+
+        <div class="tech-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="tech-icon" style="color:#264de4"><i class="fab fa-css3-alt"></i></div>
+          <span class="tech-name">CSS3</span>
+          <span class="tech-role">Styling & animations</span>
+        </div>
+
+        <div class="tech-card glass-card" data-aos="zoom-in" data-aos-delay="250">
+          <div class="tech-icon" style="color:#f7df1e"><i class="fab fa-js-square"></i></div>
+          <span class="tech-name">JavaScript</span>
+          <span class="tech-role">Frontend interactivity</span>
+        </div>
+
+        <div class="tech-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="tech-icon gemini-icon"><i class="fa-solid fa-gem"></i></div>
+          <span class="tech-name">Gemini AI</span>
+          <span class="tech-role">Generative AI engine</span>
+        </div>
+
+        <div class="tech-card glass-card" data-aos="zoom-in" data-aos-delay="350">
+          <div class="tech-icon" style="color:#412991"><i class="fa-solid fa-plug"></i></div>
+          <span class="tech-name">AI APIs</span>
+          <span class="tech-role">TTS, vision, NLP</span>
+        </div>
+
+        <div class="tech-card glass-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="tech-icon" style="color:#ff6b6b"><i class="fa-brands fa-github"></i></div>
+          <span class="tech-name">GitHub</span>
+          <span class="tech-role">Version control</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS ──────────────────────────────────── -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Process</span>
+        <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
+        <p class="section-desc">Five simple steps from topic selection to personalised mastery.</p>
+      </div>
+      <div class="steps-container">
+        <div class="steps-line"></div>
+
+        <div class="step" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-number">01</div>
+          <div class="step-content glass-card">
+            <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3>Select a Topic</h3>
+            <p>Browse or search any Machine Learning concept — from Linear Regression to Transformer architectures. Pick
+              your starting point.</p>
+          </div>
+        </div>
+
+        <div class="step step-right" data-aos="fade-up" data-aos-delay="150">
+          <div class="step-number">02</div>
+          <div class="step-content glass-card">
+            <div class="step-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>AI Generates Explanation</h3>
+            <p>Gemini AI crafts a tailored, contextual explanation at exactly the right depth for your level —
+              instantly.</p>
+          </div>
+        </div>
+
+        <div class="step" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-number">03</div>
+          <div class="step-content glass-card">
+            <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Code Examples Provided</h3>
+            <p>Receive annotated, runnable Python code illustrating the concept with real datasets and best practices.
+            </p>
+          </div>
+        </div>
+
+        <div class="step step-right" data-aos="fade-up" data-aos-delay="250">
+          <div class="step-number">04</div>
+          <div class="step-content glass-card">
+            <div class="step-icon"><i class="fa-solid fa-photo-film"></i></div>
+            <h3>Visual + Audio Support</h3>
+            <p>Diagrams and audio narrations are generated in parallel — see and hear the concept to reinforce
+              understanding.</p>
+          </div>
+        </div>
+
+        <div class="step" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-number">05</div>
+          <div class="step-content glass-card">
+            <div class="step-icon"><i class="fa-solid fa-chart-bar"></i></div>
+            <h3>Personalised Feedback</h3>
+            <p>The platform tracks your progress, identifies gaps, and adjusts your learning path for continuous
+              improvement.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DEMO ──────────────────────────────────────────── -->
+  <section class="demo section" id="demo">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Try It Live</span>
+        <h2 class="section-title">Interactive <span class="gradient-text">Demo</span></h2>
+        <p class="section-desc">Enter any ML topic and see LearnSphere generate a customised explanation.</p>
+      </div>
+      <div class="demo-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="demo-panel glass-card">
+          <div class="demo-input-area">
+            <div class="demo-input-header">
+              <i class="fa-solid fa-terminal"></i>
+              <span>LearnSphere AI Console</span>
+              <div class="demo-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+            </div>
+            <div class="demo-topic-pills">
+              <span class="topic-pill" data-topic="Neural Networks">Neural Networks</span>
+              <span class="topic-pill" data-topic="Support Vector Machines">SVM</span>
+              <span class="topic-pill" data-topic="Random Forest">Random Forest</span>
+              <span class="topic-pill" data-topic="Gradient Descent">Gradient Descent</span>
+              <span class="topic-pill" data-topic="K-Means Clustering">K-Means</span>
+              <span class="topic-pill" data-topic="Backpropagation">Backprop</span>
+            </div>
+            <div class="demo-input-row">
+              <input type="text" id="topicInput" class="demo-input"
+                placeholder="e.g. Explain overfitting in simple terms..." autocomplete="off" />
+              <button class="btn btn-primary demo-btn" id="generateBtn">
+                <i class="fa-solid fa-bolt"></i> Generate
+              </button>
+            </div>
+            <div class="demo-options">
+              <label class="demo-option">
+                <input type="radio" name="demoMode" value="explanation" checked /> Explanation
+              </label>
+              <label class="demo-option">
+                <input type="radio" name="demoMode" value="code" /> Code Example
+              </label>
+              <label class="demo-option">
+                <input type="radio" name="demoMode" value="quiz" /> Quiz Me
+              </label>
+            </div>
+          </div>
+          <div class="demo-output-area" id="demoOutputArea">
+            <div class="demo-placeholder" id="demoPlaceholder">
+              <i class="fa-solid fa-brain fa-3x"></i>
+              <p>Enter a topic above and click <strong>Generate</strong> to see LearnSphere in action.</p>
+            </div>
+            <div class="demo-response hidden" id="demoResponse">
+              <div class="response-header">
+                <span class="response-badge"><i class="fa-solid fa-sparkles"></i> AI Response</span>
+                <button class="copy-btn" id="copyBtn" title="Copy response"><i class="fa-solid fa-copy"></i></button>
+              </div>
+              <div class="response-content" id="responseContent"></div>
+              <div class="response-footer">
+                <span class="response-meta" id="responseMeta"></span>
+                <div class="response-actions">
+                  <button class="btn btn-ghost btn-sm" id="audioBtn"><i class="fa-solid fa-headphones"></i>
+                    Audio</button>
+                  <button class="btn btn-ghost btn-sm" id="codeBtn"><i class="fa-solid fa-code"></i> Code</button>
+                  <button class="btn btn-ghost btn-sm"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-chatbot glass-card" data-aos="fade-left" data-aos-delay="200">
+          <div class="chatbot-header">
+            <div class="chatbot-avatar"><i class="fa-solid fa-robot"></i></div>
+            <div>
+              <span class="chatbot-name">Sphere AI Tutor</span>
+              <span class="chatbot-status"><i class="fa-solid fa-circle"></i> Online</span>
+            </div>
+          </div>
+          <div class="chatbot-messages" id="chatMessages">
+            <div class="chat-msg bot">
+              <div class="chat-bubble">👋 Hi! I'm your AI tutor. What ML concept would you like to explore today?</div>
+            </div>
+          </div>
+          <div class="chatbot-input-row">
+            <input type="text" id="chatInput" class="chatbot-input" placeholder="Ask me anything..." />
+            <button class="chatbot-send" id="chatSend"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER / CONTACT ──────────────────────────────── -->
+  <footer class="footer" id="contact">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon"><i class="fa-solid fa-brain"></i></span>
+            <span class="logo-text">Learn<span class="accent">Sphere</span></span>
+          </a>
+          <p>An AI-powered educational platform making Machine Learning accessible to everyone through personalized,
+            adaptive content delivery.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#demo">Live Demo</a></li>
+            <li><a href="#technologies">Tech Stack</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>ML Topics</h4>
+          <ul>
+            <li><a href="#demo">Supervised Learning</a></li>
+            <li><a href="#demo">Neural Networks</a></li>
+            <li><a href="#demo">Deep Learning</a></li>
+            <li><a href="#demo">NLP & Transformers</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Project</h4>
+          <ul>
+            <li><a href="#" id="githubLink"><i class="fab fa-github"></i> GitHub Repository</a></li>
+            <li><a href="#about">About the Project</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Report an Issue</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 <strong>LearnSphere</strong>. Built with <i class="fa-solid fa-heart" style="color:#ff6b6b"></i>
+          using Python, Flask & Gemini AI.</p>
+        <p class="footer-credits">A Generative AI Educational Research Project</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- AOS & Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
